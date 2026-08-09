@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pulgas Water Temple</title>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; background: #111; color: #f4efe6; }
+    main { min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; }
+    header, footer { padding: 1rem 1.25rem; background: #181818; }
+    h1 { margin: 0; font-size: clamp(1.3rem, 4vw, 2rem); font-weight: 500; }
+    p { color: #bcb6aa; margin: .35rem 0 0; }
+    model-viewer { width: 100%; height: min(78vh, 850px); background: radial-gradient(circle at 50% 35%, #3f473e, #161914 68%); }
+    footer { font-size: .85rem; color: #9d998e; }
+    code { color: #ded4bd; }
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>Pulgas Water Temple</h1><p>Interactive architectural model</p></header>
+    <model-viewer src="assets/temple.glb" alt="Pulgas Water Temple" camera-controls auto-rotate shadow-intensity="1" exposure="1" ar reveal="auto"></model-viewer>
+    <footer>Drag to orbit · Pinch to zoom · <code>temple.glb</code></footer>
+  </main>
+</body>
+</html>
