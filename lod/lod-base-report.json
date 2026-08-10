@@ -1,0 +1,2097 @@
+{
+  "source": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\temple-model\\Pulgas-Water-Temple-live-cornice-frieze-ring-v6-tripo2-s90-newcap90well-plaindrum.blend",
+  "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-base-tripo2-s90-newcap90well-plaindrum.blend",
+  "before": {
+    "faces": 7440166,
+    "boundary": 357400,
+    "nonmanifold": 10,
+    "loose": 128,
+    "degenerate": 0,
+    "flipped": 1640
+  },
+  "after": {
+    "faces": 7439846,
+    "boundary": 107780,
+    "nonmanifold": 160,
+    "loose": 0,
+    "degenerate": 0,
+    "flipped": 1620
+  },
+  "meshes": [
+    {
+      "mesh": "CORINTHIAN_CAPITAL_MASTER",
+      "uses": 10,
+      "weld_rel": 1e-07,
+      "before": {
+        "verts": 119861,
+        "faces": 248899,
+        "boundary": 11,
+        "nonmanifold": 1,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 163,
+        "score": 175
+      },
+      "after": {
+        "verts": 119859,
+        "faces": 248897,
+        "boundary": 9,
+        "nonmanifold": 1,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 161,
+        "score": 171
+      }
+    },
+    {
+      "mesh": "LEAFSCROLL_MASTER.001",
+      "uses": 10,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 78076,
+        "faces": 152362,
+        "boundary": 4322,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 4322
+      },
+      "after": {
+        "verts": 78076,
+        "faces": 152362,
+        "boundary": 4322,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 4322
+      }
+    },
+    {
+      "mesh": "LEAFSCROLL_MASTER.002",
+      "uses": 10,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 78076,
+        "faces": 152362,
+        "boundary": 4322,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 4322
+      },
+      "after": {
+        "verts": 78076,
+        "faces": 152362,
+        "boundary": 4322,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 4322
+      }
+    },
+    {
+      "mesh": "TRIPO_LION_MASK_MASTER",
+      "uses": 10,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 49705,
+        "faces": 99099,
+        "boundary": 407,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 407
+      },
+      "after": {
+        "verts": 49705,
+        "faces": 99099,
+        "boundary": 407,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 407
+      }
+    },
+    {
+      "mesh": "ANTHEMION_PLAQUE_MASTER",
+      "uses": 10,
+      "weld_rel": 0.0003,
+      "before": {
+        "verts": 50078,
+        "faces": 80000,
+        "boundary": 26206,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 1,
+        "score": 26207
+      },
+      "after": {
+        "verts": 40295,
+        "faces": 79970,
+        "boundary": 1246,
+        "nonmanifold": 15,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 1,
+        "score": 1262
+      }
+    },
+    {
+      "mesh": "Lion scalloped mane shield mesh",
+      "uses": 10,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 3772,
+        "faces": 3918,
+        "boundary": 144,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 144
+      },
+      "after": {
+        "verts": 3772,
+        "faces": 3918,
+        "boundary": 144,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 144
+      }
+    },
+    {
+      "mesh": "Ten deep-fluted shaft overlays mesh.001",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 12960,
+        "faces": 11520,
+        "boundary": 2880,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 2880
+      },
+      "after": {
+        "verts": 12960,
+        "faces": 11520,
+        "boundary": 2880,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 2880
+      }
+    },
+    {
+      "mesh": "Molded column base radial module 01 mesh",
+      "uses": 10,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 1040,
+        "faces": 1034,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 1040,
+        "faces": 1034,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Continuous Greek-key meander relief mesh.001",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 4720,
+        "faces": 4180,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 4720,
+        "faces": 4180,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Continuous lower entablature architrave mesh",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 4096,
+        "faces": 4096,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 4096,
+        "faces": 4096,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Lion scalloped mane shield mesh.001",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 3772,
+        "faces": 3918,
+        "boundary": 144,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 144
+      },
+      "after": {
+        "verts": 3772,
+        "faces": 3918,
+        "boundary": 144,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 144
+      }
+    },
+    {
+      "mesh": "Rebuilt upper cornice backing with chamfered top mesh",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 3584,
+        "faces": 3584,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 3584,
+        "faces": 3584,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Central water well mesh",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 2048,
+        "faces": 1920,
+        "boundary": 256,
+        "nonmanifold": 0,
+        "loose": 128,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 384
+      },
+      "after": {
+        "verts": 2048,
+        "faces": 1920,
+        "boundary": 256,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 256
+      }
+    },
+    {
+      "mesh": "Plain drum wall mesh",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 1440,
+        "faces": 1440,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 1440,
+        "faces": 1440,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Recessed circular meander bed mesh.001",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 1280,
+        "faces": 1280,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 1280,
+        "faces": 1280,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Torus",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 1280,
+        "faces": 1280,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 1280,
+        "faces": 1280,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Cylinder - annular",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 1024,
+        "faces": 1024,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 1024,
+        "faces": 1024,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Cylinder.001 - annular",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 1024,
+        "faces": 1024,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 1024,
+        "faces": 1024,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Cylinder.002 - annular",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 1024,
+        "faces": 1024,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 1024,
+        "faces": 1024,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "Cylinder.003 - annular",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 1024,
+        "faces": 1024,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 1024,
+        "faces": 1024,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_MOLDING",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 720,
+        "faces": 720,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 720,
+        "faces": 720,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "WELL braid band inner",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 864,
+        "faces": 576,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 864,
+        "faces": 576,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "WELL braid band outer",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 864,
+        "faces": 576,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 864,
+        "faces": 576,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.001",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.002",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.003",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.004",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.005",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.006",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.007",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.008",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE narrow upper fillet mesh.009",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.001",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.002",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.003",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.004",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.005",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.006",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.007",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.008",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "LEAF-AND-TONGUE small lower ridge mesh.009",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 260,
+        "faces": 516,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_01",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_02",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_03",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_04",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_05",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_06",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_07",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_08",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_09",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_ANTHEMION_C",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_01",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_02",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_03",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_04",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_05",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_06",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_07",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_08",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_09",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_LION_L",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_01",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_02",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_03",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_04",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_05",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_06",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_07",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_08",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_L_09",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_01",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_02",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_03",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_04",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_05",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_06",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_07",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_08",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    },
+    {
+      "mesh": "FRIEZE_BACKING_FILLER_SCROLL_R_09",
+      "uses": 1,
+      "weld_rel": 0.0,
+      "before": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      },
+      "after": {
+        "verts": 292,
+        "faces": 290,
+        "boundary": 0,
+        "nonmanifold": 0,
+        "loose": 0,
+        "degenerate": 0,
+        "flipped": 0,
+        "score": 0
+      }
+    }
+  ]
+}

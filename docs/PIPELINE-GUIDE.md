@@ -19,6 +19,29 @@ raw .glb donor ──┘                                                     │
 Two currencies run in parallel the whole way: **renders** decide appearance,
 **numeric audits** decide integrity. Neither substitutes for the other.
 
+**Contents**
+
+1. [Fix one coordinate system first](#1-fix-one-coordinate-system-first)
+2. [Measure in the frame that means something](#2-measure-in-the-frame-that-means-something)
+3. [Getting geometry out of a photograph](#3-getting-geometry-out-of-a-photograph)
+4. [Judging a donor before building on it](#4-judging-a-donor-before-building-on-it)
+5. [The master recipe](#5-the-master-recipe)
+6. [Canonical frames](#6-canonical-frames)
+7. [Seating an element on the cylinder](#7-seating-an-element-on-the-cylinder)
+8. [One module → ten](#8-one-module--ten)
+9. [Making relief sit on a wall](#9-making-relief-sit-on-a-wall)
+10. [Swapping structural elements](#10-swapping-structural-elements)
+11. [Sweep, measure, pick](#11-sweep-measure-pick)
+12. [Verification](#12-verification)
+13. [Knowing which fix is safe to make](#13-knowing-which-fix-is-safe-to-make)
+14. [Repairing the whole model](#14-repairing-the-whole-model)
+15. [Resolution tiers](#15-resolution-tiers)
+16. [Case study: the capital's decimate floor](#16-case-study-the-capitals-decimate-floor)
+17. [Project mechanics](#17-project-mechanics)
+18. [Working with the agent](#18-working-with-the-agent)
+
+[Result](#result) · [Appendix — Blender API notes](#appendix--blender-api-notes-worth-having-on-hand)
+
 ---
 
 ## 1. Fix one coordinate system first
@@ -257,7 +280,7 @@ sweep entry: decimating an already-decimated mesh is a different operation.
 
 Note that collapse decimation cannot be driven arbitrarily low — on undercut
 ornament it hits a hard floor no ratio will pass. That does not matter at master
-resolution, but it dominates the low LOD tiers; see §15.
+resolution, but it dominates the low LOD tiers; see §16.
 
 **Stamp provenance** into the object: source asset, source URL, license, and a
 `derivation` string with the actual parameters (weld threshold, symmetry yaw,
@@ -454,6 +477,25 @@ ob.matrix_world = T(axis) @ S(k, k, 1) @ T(axis).inverted() @ ob.matrix_world
 That is origin-agnostic — it means "scale the world about this column's axis"
 regardless of where the object's origin sits.
 
+**Removing baked-in carved detail is a rebuild, not an edit.** The drum
+carried the real Pulgas Water Temple's engraved quotation as a zone of dense
+sub-tessellation on an otherwise plain wall tube (177 z-rings between two
+plain end rings). The first attempt edited it in place: push the inset-text
+vertices back out to the wall radius (pure position change, no topology
+change) and `bmesh.ops.dissolve_limit` the now-coplanar faces. Rendered
+twice, it still ghosted the old letters as faceting artefacts — even after
+clearing the mesh's baked custom split normals, the first suspect, which made
+the ghosting *worse*, not better, pointing at residual non-planar
+micro-geometry from the dissolve itself rather than normals. Same failure
+family as the leafscroll's rejected flat-plane cut and the capital's Solidify
+spikes: editing around complex existing topology fights back. The fix
+(`build_plain_drum.py`) threw the mesh away and rebuilt it from the four
+measured radii/heights as primitives — a wall tube plus two rim annuli, 0
+boundary/non-manifold/loose beyond the two inner-rim circles the downstream
+chain steps already expect there. Clean by construction beats repair, same
+lesson as the well's braid course (§9) and the capital-rebuild plan in
+`ROADMAP.md`, now with a third confirming case.
+
 ---
 
 ## 11. Sweep, measure, pick
@@ -505,7 +547,7 @@ faces. Score on the sum: the lion traded 30,805 holes for 196 such edges.
 
 **And never let the audit stand in for the render.** An integrity metric measures
 whether a mesh is well-formed; it cannot tell you it is still the right shape.
-§15 has the case that proves it — an operation that improved every number in this
+§16 has the case that proves it — an operation that improved every number in this
 list while destroying the building.
 
 ---
@@ -629,7 +671,7 @@ non-manifold 87 → 1. The lesson generalizes past this one bug: **the weld set
 that is safe is the smallest one that contains the defect, not the smallest
 one that seems topologically tidy.**
 
-**The BMVert-reference-invalidation trap (§16's API notes) recurs in a new
+**The BMVert-reference-invalidation trap (the appendix's API notes) recurs in a new
 shape every time it's forgotten.** It has now been hit three ways in this
 project: creating a custom data layer after capturing element references
 (fixed by creating the layer first); calling an op that adds geometry while
@@ -640,6 +682,23 @@ clusters' vertex lists. The durable fix is the same shape every time: tag
 elements with a custom data layer created before anything is captured, then
 re-query `bm.verts`/`bm.edges` by tag value fresh before each mutating call,
 rather than ever holding a Python element reference across one.
+
+**When two different defect scans can legitimately share vertices, cluster
+them with union-find, not sequential tagging.** The leafscroll and lion
+masters both carry the same small defect shape — a sliver triangle at each
+bad spot produces one closed boundary loop *and* its own pair of
+non-manifold edges, from two separate scans (`len(link_faces) == 1` and
+`> 2`) over the same mesh. Checked directly before writing the repair: 52 of
+the leafscroll's 78 boundary-loop vertices were also non-manifold-edge
+endpoints, and 102 of the lion's 151. Assigning a cluster tag by looping
+over boundary loops first and non-manifold edges second — the same
+sequential-overwrite shape as the over-greedy-scope bug above — would let
+the second pass silently evict shared vertices from the first pass's
+cluster. The fix: union-find over vertex indices, unioning both endpoints of
+every boundary *and* non-manifold edge before assigning any tags, so
+overlapping defects merge into one correct cluster regardless of scan order.
+Both masters closed to 0 boundary / 0 non-manifold in one pass this way
+(`scripts/repair_leafscroll.py`, `scripts/repair_lion.py`).
 
 ---
 
@@ -714,7 +773,7 @@ target = fixed_faces + ratio × Σ(faces × users) over decimatable meshes
 counted as fixed. That is the building's own structure — 0.5% of the faces and
 100% of the silhouette. Decimating it buys nothing measurable and costs the
 shape. Hold this threshold fixed across tiers; see *Missing a target on purpose*
-below for what happens when it is relaxed to make the numbers work.
+in §16 for what happens when it is relaxed to make the numbers work.
 
 **`modifier_apply` refuses multi-user data**, which is the one real API obstacle
 here. Copy the mesh (the copy has a single user — a scratch object), decimate the
@@ -725,6 +784,19 @@ multiplies file size by ten.
 **Decimate every tier from the base, never from the tier above it.** Error
 compounds down a chain, and decimating an already-decimated mesh is a different
 operation from decimating the original once.
+
+The method above is the whole story for most meshes. The Corinthian capital
+broke it badly enough, and instructively enough, to earn its own section —
+see §16.
+
+---
+
+## 16. Case study: the capital's decimate floor
+
+Five rejected approaches and the two things that actually worked, in the
+order they were tried. Kept as a full case study rather than compressed to
+its conclusion because the rejected approaches are what make the accepted one
+defensible, same principle as §11.
 
 ### Collapse decimation has a floor, and welding makes it worse
 
@@ -818,7 +890,7 @@ technique): boundary edges 575 → 11, non-manifold 120 → 1, 74 loose verts / 
 loose edges → 0, shape confirmed identical by render at every step. It did
 **not** lift the floor. Decimate still plateaus at 23,403 faces, flat from
 ratio 0.05 down to 0.0001 — a fully-repaired mesh and a badly-defective one
-hit the same wall. The floor's cause (§15 above) was never the non-manifold
+hit the same wall. The floor's cause (above) was never the non-manifold
 edges themselves; it was the *geometric* complexity of the undercuts, which
 topology repair does not remove.
 
@@ -894,9 +966,117 @@ contradicting it: remesh ruins the *asset*, but a remeshed shape is exactly
 what a bake proxy is supposed to be — a smooth carrier for detail that lives
 in a texture, not in triangles.
 
+The bake-proxy approach worked on the first real attempt: coarse Voxel
+Remesh (smooths and bounds curvature) then Collapse on the *remeshed* result
+(not the original spiky surface), UV-unwrapped with `smart_project`, then a
+Cycles `use_selected_to_active` normal-map bake from the full-detail source
+onto the low proxy. 3,842 faces plus a 2048×2048 normal map read as full
+detail under render — volutes, rosette, and acanthus leaves all legible, no
+spikes. The honest caveat: the *silhouette* is still low-poly-faceted, since
+a normal map fixes shading, not the outline it's painted on.
+
+### Decimation's failure on the capital was about undercuts, not organic detail
+
+The leafscroll master — 200,000 faces of acanthus-and-flower scrollwork,
+comparably intricate to the capital by eye — was repaired and LOD-reduced
+next, and two assumptions the capital's section above invites turned out
+wrong when actually tested rather than inferred.
+
+**A flat-plane cut through organic relief fails the same way Solidify did,
+even where the plane is genuinely planar.** The leafscroll orients flush
+against the cornice wall, so — like the capital's interior — roughly
+40–45% of its depth (measured by a front-facing BVH raycast sweep: the
+visible surface never reaches past −0.011 on the depth axis, while the mesh
+extends to −0.111) is never seen. The obvious fix looked simpler than the
+capital's: bisect the mesh at a fixed depth and cap the cut, no volumetric
+op involved. It still failed. Sweeping eleven candidate cut depths and
+counting the resulting boundary loops showed the cross-section splits into
+3–16 disconnected loops with hundreds to thousands of edges at every depth
+close enough to matter — this is a relief with individually-undulating
+leaves, so no single plane separates "front detail" from "back mass"
+cleanly. Both `bpy.ops.mesh.bisect(use_fill=True)` and
+`bmesh.ops.triangle_fill` were tried on the resulting boundary and both
+produced a visible starburst — large flat facets fanning from concentrated
+vertices, not following the actual contour — when rendered. This is the
+same failure *shape* as Solidify's spikes on the capital, but the cause is
+different and worth separating out: Solidify broke on a **non-planar**
+offset field; this broke on a **planar but topologically complex** boundary.
+`bmesh.ops.triangle_fill`'s earlier failure (§13) was blamed on non-planar
+input at the time — this result shows large, highly concave planar loops
+break it too. Visibility culling (below) sidesteps the whole class: it
+never needs to cap anything.
+
+**Visibility culling generalizes to flush-mounted geometry, with one
+change: restrict the viewpoint sphere to the hemisphere that can physically
+see it.** The capital sampled a near-full sphere (excluding only the cone
+blocked by the column shaft) because it is free-standing. The leafscroll is
+flush-mounted, so any viewpoint on the wall side of it is not just
+occluded, it is physically inside the wall — filtering candidate directions
+to `dot(direction, face_normal_axis) >= 0.02` before the raycast sweep
+encodes that directly, rather than spending viewpoints on a hemisphere that
+can never contribute. Result: 199,844 → 152,362 faces (23.8% removed), 0
+non-manifold, confirmed by a 9-angle render sweep plus a matched-camera
+pixel-diff against the pre-strip mesh (the only differences were sub-pixel
+AA noise at the new boundary edges, confirmed by cropping and comparing
+directly, not just trusting a nonzero diff number).
+
+**A single straight-on depth measurement overestimates how much is safe to
+cull; the multi-viewpoint sweep is not a formality.** The raycast-floor
+measurement (−0.011) implied roughly 45% of the mesh was back-hump waste,
+matching an independent vertex-density-histogram valley almost exactly. The
+actual visibility sweep — sampling the full realistic viewing hemisphere,
+not just one straight-on angle — only cleared 23.8%. Walking past the
+frieze exposes shallow-grazing side angles that a single frontal raycast
+can't see past; those angles reach further into the "back" than straight-on
+does. The gap between the two numbers is the cost of the shortcut: a single-
+viewpoint depth estimate is a fast sanity check, not a substitute for the
+full sweep before anything gets deleted.
+
+**The capital's decimate failure does not generalize to "this project's
+organic assets can't be decimated" — it was specifically about undercuts.**
+Tested directly rather than assumed: the leafscroll decimates *cleanly* at
+every ratio tried, including 0.05 (95% reduction, 7,618 faces) — visible
+faceting, never the starburst/shatter the capital showed at even mild
+ratios. The difference is structural, not aesthetic: the capital's acanthus
+carving folds back on itself (above, confirmed by bisecting a copy and
+rendering the cut face), so Collapse has to negotiate a surface that is
+close to itself in space but far apart in connectivity. The leafscroll is a
+shallow relief with a single consistent front-facing normal and no
+undercuts — geometrically closer to a heightmap than a sculpture-in-the-
+round, even though both read as "organic detail" by eye. **Undercut depth,
+not visual complexity, is the property that predicts whether Collapse will
+hold up** — worth checking (e.g. the bisect-and-render test above) before
+assuming either a bake-proxy detour or a straight decimate is the right
+starting point for the next master.
+
+### Follow-up: tiers named by what they measure, and a finished asset that documentation had lost track of
+
+Two loose ends closed 2026-08-09. First, `paths.CAPITAL_MASTER_LOD1` had sat
+undefined with a comment reading "NOT YET BUILT" even though the bake-proxy
+attempt two sections up *had* been built and verified — the working files
+(`masters/corinthian-capital-proxy-lod1.blend`, `-lod1-baked.blend`, the
+normal-map PNG) were sitting in `masters/` unreferenced by any path constant.
+A repo cleanup pass found them, re-verified them (0 boundary/non-manifold, a
+fresh render confirming the bake still reads as full detail), and wired the
+constant up. The lesson isn't the asset, it's the drift: a finding recorded
+in prose (here, in this guide and in `ROADMAP.md`) is not the same as a
+finding recorded in code that the rest of the project actually reads, and the
+two had quietly diverged for a day.
+
+Second, `build_lod_tiers.py`'s three whole-model tiers were renamed from
+nominal target labels (`lod1`/`lod2`/`lod3`, meaning 500k/150k/50k faces) to
+the *measured* post-decimation triangle count (`lod680k`/`lod210k`/`lod86k`,
+via `paths.triangle_label`, 2 significant figures). This is the direct
+consequence of *Missing a target on purpose* above: a tier's real yield
+routinely lands 15-70% over its nominal target once protected structure is
+added back in, so a name built from the target was a promise the file did not
+keep. `lod3` implied an aggressive reduction; the file was 86,000 triangles,
+not 50,000. A name built from the actual count cannot lie about itself, and
+does not need updating by hand when the pipeline's yield shifts on a rebuild.
+
 ---
 
-## 16. Project mechanics
+## 17. Project mechanics
 
 **Never edit a source file in place.** Open, then *immediately* save-as the new
 working file, then edit. The result is a chain of versioned checkpoints:
@@ -939,7 +1119,7 @@ protecting it.
 
 ---
 
-## 17. Working with the agent
+## 18. Working with the agent
 
 - **Ask for the measurement, not the opinion.** Nearly every decision here was
   settled by a number, and several contradicted a confident guess — including the
@@ -989,7 +1169,7 @@ good at opposite things:
 | unattended multi-step builds | its natural strength | fragile, times out |
 
 Everything in this guide depends on the left column. The versioned file chain
-*is* the version control (§16); a constant printed for the next step only helps
+*is* the version control (§17); a constant printed for the next step only helps
 if there is a next step to run; "rebuild the whole thing with a different donor
 and compare" is only cheap because the build is a program. A live session
 produces geometry with no reproducible provenance, which is the one thing this
@@ -1026,10 +1206,12 @@ Two notes if you do use one:
 | capitals | procedural, 6,080 f | Temple of Vesta master, 250k f | |
 | scroll | raw donor ×20, 1.42M f each | master, 200k f | |
 
-Plus four decimated tiers off the repaired base (§15), from 611k down to 306k
-faces. The two lowest miss their targets, deliberately and on the record: the
-capital's collapse floor sets them, and the two available ways around it both
-cost the building's silhouette.
+Plus three decimated tiers off the repaired base (§15), named by their own
+measured triangle count rather than a nominal target (§16's final
+*Follow-up*): lod680k, lod210k, lod86k. The lowest still misses its nominal
+50,000-face target by nearly 2×, deliberately and on the record: the
+capital's collapse floor (§16) sets it, and the two available ways around
+that floor both cost the building's silhouette.
 
 ---
 
@@ -1071,3 +1253,15 @@ engine identifier is **`BLENDER_EEVEE`** (not `BLENDER_EEVEE_NEXT`).
 - **Do modifier work on one reusable scratch object**, not on the real objects.
   Applying a modifier requires selection and an active object, and doing that to
   live objects risks disturbing their transforms.
+- **Lights accumulate silently down a checkpoint chain.** Every script's own
+  render-check step (§12) opens the previous checkpoint -- which already
+  carries the *previous* stage's preview lights -- and adds its own on top
+  without removing what it inherited. Each script individually follows the
+  correct "never touch the input, fork to a new file" rule, so nothing looks
+  wrong at any single step; the seven lights it produced by the end (including
+  a stock 1000W `POINT` light nobody ever placed on purpose, left from the
+  project's very first save) only showed up as a whole-model symptom -- every
+  material blown toward white -- that looked exactly like a material bug and
+  was not one (the base colours measured correct throughout). Strip every
+  `LIGHT`-type object before installing a new rig on any file being treated as
+  a deliverable, not just added lights on top (`fix_master_lighting.py`).

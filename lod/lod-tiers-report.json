@@ -1,0 +1,222 @@
+{
+  "base": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-structure-tripo2-s90-newcap90well-plaindrum.blend",
+  "keep_faces": 2000,
+  "tiers": [
+    {
+      "tier": "hero",
+      "target": 500000,
+      "ratio": 0.06335092749467831,
+      "faces": 571822,
+      "triangles": 681986,
+      "objects": 417,
+      "boundary": 72300,
+      "meshes": [
+        {
+          "mesh": "CORINTHIAN_CAPITAL_MASTER",
+          "uses": 10,
+          "before": 248897,
+          "after": 22826,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.009375000000000001
+        },
+        {
+          "mesh": "LEAFSCROLL_MASTER.001",
+          "uses": 10,
+          "before": 152362,
+          "after": 9652,
+          "boundary": 2996,
+          "nonmanifold": 0,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "LEAFSCROLL_MASTER.002",
+          "uses": 10,
+          "before": 152362,
+          "after": 9652,
+          "boundary": 2996,
+          "nonmanifold": 0,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "TRIPO_LION_MASK_MASTER",
+          "uses": 10,
+          "before": 99099,
+          "after": 6277,
+          "boundary": 329,
+          "nonmanifold": 0,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "ANTHEMION_PLAQUE_MASTER",
+          "uses": 10,
+          "before": 79970,
+          "after": 5066,
+          "boundary": 909,
+          "nonmanifold": 15,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "Lion scalloped mane shield mesh",
+          "uses": 10,
+          "before": 3918,
+          "after": 374,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.0315
+        }
+      ],
+      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod680k-tripo2-s90-newcap90well-plaindrum.blend"
+    },
+    {
+      "tier": "standard",
+      "target": 150000,
+      "ratio": 0.015835831269820584,
+      "faces": 171212,
+      "triangles": 211856,
+      "objects": 417,
+      "boundary": 33230,
+      "meshes": [
+        {
+          "mesh": "CORINTHIAN_CAPITAL_MASTER",
+          "uses": 10,
+          "before": 248897,
+          "after": 6035,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.01675
+        },
+        {
+          "mesh": "LEAFSCROLL_MASTER.001",
+          "uses": 10,
+          "before": 152362,
+          "after": 2412,
+          "boundary": 1160,
+          "nonmanifold": 0,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "LEAFSCROLL_MASTER.002",
+          "uses": 10,
+          "before": 152362,
+          "after": 2412,
+          "boundary": 1160,
+          "nonmanifold": 0,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "TRIPO_LION_MASK_MASTER",
+          "uses": 10,
+          "before": 99099,
+          "after": 1569,
+          "boundary": 179,
+          "nonmanifold": 0,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "ANTHEMION_PLAQUE_MASTER",
+          "uses": 10,
+          "before": 79970,
+          "after": 1265,
+          "boundary": 824,
+          "nonmanifold": 15,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "Lion scalloped mane shield mesh",
+          "uses": 10,
+          "before": 3918,
+          "after": 93,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.061
+        }
+      ],
+      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod210k-tripo2-s90-newcap90well-plaindrum.blend"
+    },
+    {
+      "tier": "working",
+      "target": 50000,
+      "ratio": 0.0022600894912898043,
+      "faces": 58692,
+      "triangles": 86286,
+      "objects": 417,
+      "boundary": 1350,
+      "meshes": [
+        {
+          "mesh": "CORINTHIAN_CAPITAL_MASTER",
+          "uses": 10,
+          "before": 248897,
+          "after": 856,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.038875
+        },
+        {
+          "mesh": "LEAFSCROLL_MASTER.001",
+          "uses": 10,
+          "before": 152362,
+          "after": 574,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.038875
+        },
+        {
+          "mesh": "LEAFSCROLL_MASTER.002",
+          "uses": 10,
+          "before": 152362,
+          "after": 571,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.038875
+        },
+        {
+          "mesh": "TRIPO_LION_MASK_MASTER",
+          "uses": 10,
+          "before": 99099,
+          "after": 223,
+          "boundary": 135,
+          "nonmanifold": 0,
+          "method": "collapse",
+          "voxel": null
+        },
+        {
+          "mesh": "ANTHEMION_PLAQUE_MASTER",
+          "uses": 10,
+          "before": 79970,
+          "after": 290,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.053625
+        },
+        {
+          "mesh": "Lion scalloped mane shield mesh",
+          "uses": 10,
+          "before": 3918,
+          "after": 20,
+          "boundary": 0,
+          "nonmanifold": 0,
+          "method": "remesh",
+          "voxel": 0.11815624999999999
+        }
+      ],
+      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod86k-tripo2-s90-newcap90well-plaindrum.blend"
+    }
+  ]
+}

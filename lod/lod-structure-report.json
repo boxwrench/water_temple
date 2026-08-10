@@ -1,0 +1,162 @@
+{
+  "src": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-base-tripo2-s90-newcap90well-plaindrum.blend",
+  "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-structure-tripo2-s90-newcap90well-plaindrum.blend",
+  "before": 43736,
+  "after": 7240,
+  "objects": [
+    {
+      "object": "Ten deep-fluted shaft overlays",
+      "before": 11520,
+      "after": 560,
+      "kind": "10 columns",
+      "max_gap_deg": 22.987911232438933
+    },
+    {
+      "object": "Integrated raised Greek-key meander band",
+      "before": 4180,
+      "after": 1200,
+      "kind": "ring",
+      "max_gap_deg": 1.1250007542485037
+    },
+    {
+      "object": "Continuous lower entablature architrave",
+      "before": 4096,
+      "after": 360,
+      "kind": "ring",
+      "max_gap_deg": 1.4062499149348753
+    },
+    {
+      "object": "Rebuilt upper cornice backing with chamfered top",
+      "before": 3584,
+      "after": 360,
+      "kind": "ring",
+      "max_gap_deg": 1.4062499345986055
+    },
+    {
+      "object": "Bottomless central well wall",
+      "before": 1920,
+      "after": 320,
+      "kind": "ring",
+      "max_gap_deg": 2.8124994443260363
+    },
+    {
+      "object": "Plain drum wall",
+      "before": 1440,
+      "after": 160,
+      "kind": "ring",
+      "max_gap_deg": 1.0000059439724964
+    },
+    {
+      "object": "Integrated meander band stone bed",
+      "before": 1280,
+      "after": 160,
+      "kind": "ring",
+      "max_gap_deg": 1.1250047457882602
+    },
+    {
+      "object": "Landing terracotta inlay",
+      "before": 1280,
+      "after": 400,
+      "kind": "ring",
+      "max_gap_deg": 2.8125168303340615
+    },
+    {
+      "object": "Molded column base radial module 01",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.54056706069434
+    },
+    {
+      "object": "Molded column base radial module 02",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.17319611321756
+    },
+    {
+      "object": "Molded column base radial module 03",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.2093699638794
+    },
+    {
+      "object": "Molded column base radial module 04",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.46664778905847
+    },
+    {
+      "object": "Molded column base radial module 05",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.89989419860524
+    },
+    {
+      "object": "Molded column base radial module 06",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.91618977593134
+    },
+    {
+      "object": "Molded column base radial module 07",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.63704525198034
+    },
+    {
+      "object": "Molded column base radial module 08",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.2517584094741
+    },
+    {
+      "object": "Molded column base radial module 09",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.51257144857254
+    },
+    {
+      "object": "Molded column base radial module 10",
+      "before": 1034,
+      "after": 308,
+      "kind": "1 columns",
+      "max_gap_deg": 342.8192731119899
+    },
+    {
+      "object": "Round foundation course",
+      "before": 1024,
+      "after": 160,
+      "kind": "ring",
+      "max_gap_deg": 1.4062572824317954
+    },
+    {
+      "object": "Round second step",
+      "before": 1024,
+      "after": 160,
+      "kind": "ring",
+      "max_gap_deg": 1.4062535301299022
+    },
+    {
+      "object": "Round third step",
+      "before": 1024,
+      "after": 160,
+      "kind": "ring",
+      "max_gap_deg": 1.4062545561966857
+    },
+    {
+      "object": "Round upper landing",
+      "before": 1024,
+      "after": 160,
+      "kind": "ring",
+      "max_gap_deg": 1.4062546892068895
+    }
+  ]
+}
