@@ -32,6 +32,18 @@ is lathed about its own axis.
 
 Ornament is not touched here; it is decimated separately.
 
+**The rebuilt mesh is authored in world space and needs its object's
+transform reset to match.** `polar_points()` reads `ob.matrix_world @ v.co`
+and the clustered branch revolves each profile about the true world column
+axis, not the object's own origin -- so the geometry that lands in the new
+mesh is already in final position. Assigning it to `ob.data` without also
+resetting `ob.matrix_world` to identity placed it twice for any object that
+still carried its own placement transform: true for the ten per-column
+pieces (`Molded column base radial module NN`), false for the single
+continuous rings, which is exactly why this shipped for a while with only
+some structure visibly flung away from the building and the rest looking
+fine. Fixed 2026-08-10.
+
 Run:  blender --background --python scripts/build_lod_structure.py
 """
 
@@ -45,7 +57,7 @@ import math                                                       # noqa: E402
 
 import bmesh                                                      # noqa: E402
 import bpy                                                        # noqa: E402
-from mathutils import Vector                                      # noqa: E402
+from mathutils import Matrix, Vector                              # noqa: E402
 
 from paths import LOD, lod_blend                                  # noqa: E402
 
@@ -289,21 +301,31 @@ def main():
             continue
         me, kind, nprof, gap = res
         old = ob.data
-        ob.data = me
         after = len(me.polygons)
-        if after >= before:
-            ob.data = old
-            if me.users == 0:
-                bpy.data.meshes.remove(me)
-        elif old.users == 0:
-            bpy.data.meshes.remove(old)
-        before_total += before
-        after_total += after
         # Never ship a "simplification" that is bigger than what it replaced.
         if after >= before:
-            ob.data = old if old.users else ob.data
+            if me.users == 0:
+                bpy.data.meshes.remove(me)
             after = before
             kind = "kept (rebuild was larger)"
+        else:
+            ob.data = me
+            # rebuild()/revolve() author the new mesh directly in WORLD space
+            # (polar_points() reads ob.matrix_world @ v.co, and clustered
+            # profiles revolve about the true world column axis, not the
+            # object's own origin). Any object that still carries its own
+            # placement transform -- true for the ten per-column pieces like
+            # "Molded column base radial module NN", false for the single
+            # continuous rings -- would place that geometry twice: once by
+            # authoring it in world coordinates, again by matrix_world. This
+            # was shipping broken: the column-base rings and one step course
+            # rendered flung away from the building (bounding diagonal 2.29
+            # against a real ~1.3), confirmed by render before this fix.
+            ob.matrix_world = Matrix.Identity(4)
+            if old.users == 0:
+                bpy.data.meshes.remove(old)
+        before_total += before
+        after_total += after
         rows.append({"object": ob.name, "before": before, "after": after,
                      "kind": kind, "max_gap_deg": gap})
         if before >= 500:

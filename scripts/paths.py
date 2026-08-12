@@ -314,19 +314,19 @@ LION_DONOR_GLB = os.path.join(DONORS, "lion_head.glb")
 # --- the frieze build chain ---
 # The chain is a linked list of .blend checkpoints: frieze-v1 -> frieze-ring ->
 # frieze-ring-thick-drum -> -v2 -> -v3 -> -v4 -> -v5, each script opening the
-# previous file and saving to the next. Every filename is derived here and
-# suffixed with the active lion master's tag, so a rebuild with one lion can
-# never overwrite the checkpoints built with the other. The Leeds lion (and
-# its "leeds" tag / untagged chain names) was retired 2026-08-09 along with
-# its master file -- LION_TAG now only has Tripo entries.
-LION_TAG = {
-    LION_MASTER_TRIPO_V2: "tripo2",
-    # Same lion, same tag: v3-v5 are mesh-integrity/culling passes on v2, not
-    # a shape change, so chain checkpoints do not need a new tag/filename set.
-    LION_MASTER_TRIPO_V3: "tripo2",
-    LION_MASTER_TRIPO_V4: "tripo2",
-    LION_MASTER_TRIPO_V5: "tripo2",
-}[LION_MASTER]
+# previous file and saving to the next. Every filename is derived here.
+#
+# CHAIN_SUFFIX used to also carry a lion-master tag ("-tripo2") and a
+# base-chain tag ("-newcap90well-plaindrum"), back when more than one lion
+# and more than one upstream base were live candidates being compared side
+# by side -- the whole point of "put the build's identity in the filename"
+# (see docs/PIPELINE-GUIDE.md S17) is that two builds that can actually
+# differ must not overwrite each other. Retired 2026-08-10: the Leeds lion
+# and every superseded base file are gone, LION_MASTER and CHAIN_BASE each
+# resolve to exactly one file, and a tag that can only ever take one value
+# is not identity, it's noise. If a second lion or base candidate is ever
+# built again for real comparison, reintroduce a tag for it then -- do not
+# pre-emptively restore this dict for a variant that does not exist yet.
 
 # --- frieze element scale ---
 # FRIEZE_SCALE multiplies every element's size. The angular layout (36 deg
@@ -346,21 +346,10 @@ def _pct_tag(prefix, value):
     return "" if abs(value - 1.0) < 1e-9 else f"-{prefix}{round(value * 100)}"
 
 
-# The chain's identity is (which lion, what scale), so all three go in the
-# filename and no variant can overwrite another.
-# The base file is part of the chain's identity too: the same frieze built on the
-# old procedural capitals and on the new Temple-of-Vesta ones are different
-# buildings, and the checkpoints must not overwrite each other.
-BASE_TAG = {
-    CORNICE_WITH_LION: "",
-    CORNICE_WITH_NEW_CAPITALS: "-newcap",
-    CORNICE_COLUMNS_NARROWED: "-newcap90",
-    CORNICE_WELL_DETAILED: "-newcap90well",
-    CORNICE_PLAIN_DRUM: "-newcap90well-plaindrum",
-}[CHAIN_BASE]
-
-CHAIN_SUFFIX = ("" if LION_TAG == "leeds" else f"-{LION_TAG}") \
-    + _pct_tag("s", FRIEZE_SCALE) + _pct_tag("a", ANTHEMION_SCALE) + BASE_TAG
+# What's left of the chain's identity: the two knobs that can still actually
+# differ between runs. Tags vanish entirely at their default (1.0 = 100%), so
+# an unscaled build's filename carries no suffix at all.
+CHAIN_SUFFIX = _pct_tag("s", FRIEZE_SCALE) + _pct_tag("a", ANTHEMION_SCALE)
 
 
 def chain_blend(stem):

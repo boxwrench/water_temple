@@ -1091,13 +1091,18 @@ the whole thing with a different donor and compare" cheap.
 **Put the build's identity in the filename**, composed in one place:
 
 ```
-Pulgas-Water-Temple-live-cornice-frieze-ring-v6-tripo2-s90-newcap90.blend
-                                              │      │    └ base: new capitals, 90% columns
-                                              │      └ FRIEZE_SCALE 0.90
-                                              └ which lion master
+Pulgas-Water-Temple-live-cornice-frieze-ring-v6-s90.blend
+                                              └ FRIEZE_SCALE 0.90
 ```
 
 No build can overwrite another, and variants sit side by side for comparison.
+This is genuinely only worth doing for a knob that can currently produce more
+than one value. Two earlier tags did the same job for which lion master and
+which upstream base -- `-tripo2`, `-newcap90well-plaindrum` -- and both were
+dropped 2026-08-10 once only one of each remained: Leeds retired, every
+superseded base deleted. A tag that can only ever take one value doesn't
+protect anything from being overwritten; it's just noise a reader has to
+parse past. Reintroduce one if a second real candidate is ever built again.
 
 **Keep the losing option and label it.** Both the lion-half choice and the Leeds
 fallback are one-line reversals because the rejected option was kept and

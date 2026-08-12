@@ -1,5 +1,5 @@
 {
-  "base": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-structure-tripo2-s90-newcap90well-plaindrum.blend",
+  "base": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-structure-s90.blend",
   "keep_faces": 2000,
   "tiers": [
     {
@@ -72,7 +72,7 @@
           "voxel": 0.0315
         }
       ],
-      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod680k-tripo2-s90-newcap90well-plaindrum.blend"
+      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod680k-s90.blend"
     },
     {
       "tier": "standard",
@@ -144,7 +144,7 @@
           "voxel": 0.061
         }
       ],
-      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod210k-tripo2-s90-newcap90well-plaindrum.blend"
+      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod210k-s90.blend"
     },
     {
       "tier": "working",
@@ -216,7 +216,7 @@
           "voxel": 0.11815624999999999
         }
       ],
-      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod86k-tripo2-s90-newcap90well-plaindrum.blend"
+      "out": "C:\\Users\\wests\\OneDrive\\Desktop\\temple\\lod\\Pulgas-Water-Temple-lod86k-s90.blend"
     }
   ]
 }
